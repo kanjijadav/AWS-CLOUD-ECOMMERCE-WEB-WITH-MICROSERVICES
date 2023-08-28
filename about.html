@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+<link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="C:\Users\HP\OneDrive\Desktop\portfolio of me\OIP.jfif" alt="Organic Mart Logo">
+    <a href="index.html">Organic Mart</a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="blog 1.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a> <!-- Interchanged About Us and Product List -->
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="profile-icon" onclick="showProfileDropdown()">👤 &#9660;</button>
+    <div class="dropdown-content">
+      <a href="SIGN UP.html">Sign Up</a>
+      <a href="SIGN IN.html">Sign In</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Your Trusted Source for Organic Dairy Products</p>
+    </header>
+
+    <div class="content">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Welcome to [Your Company Name] – your destination for high-quality organic dairy products. Our journey began with a commitment to provide fresh and nutritious dairy products that are a result of ethical and sustainable practices.</p>
+            <p>We take pride in producing dairy products that are not only delicious but also free from harmful additives. Our passion for promoting health and well-being led us to raise Gir cows, known for their superior A2 milk, which is rich in nutrients and has numerous health benefits.</p>
+        </div>
+        <div class="about-image">
+            <img src="C:\Users\HP\OneDrive\Desktop\dudhwala\static\fresh-organic-milk-nature-background-49456231.webp" alt="About Us">
+        </div>
+    </div>
+    
+  
+
+    <footer>
+        <p>&copy; 2023 Organic Mart All rights reserved.</p>
+    </footer>
+</body>
+</html>

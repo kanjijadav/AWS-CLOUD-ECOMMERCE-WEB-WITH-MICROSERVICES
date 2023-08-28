@@ -1,0 +1,46 @@
+/* Your existing CSS styles here */
+
+/* Additional styles for the navigation menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        position: static;
+        display: block;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .dropdown li {
+        padding: 10px;
+    }
+
+    .dropdown.active {
+        background-color: #f5f5f5;
+    }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ada7a7;
+    color: black;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a, .dropdown .dropbtn {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content {
+      position: relative;
+    }
+  }
+
+  /* Additional styles for profile icon */
+  .profile-icon {
+    float: right;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer; /* Add cursor style to indicate clickability */
+  }
+  
+  /* Styles for the profile section */
+  .profile-section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  /* Style for profile options within profile section */
+  .profile-section a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Hover effect for profile options */
+  .profile-section a:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">orgo milk</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="milk_comparison.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a>
+  <!-- Modified profile icon and profile section -->
+  <div class="profile-icon" onmouseover="showProfileDropdown()" onmouseout="hideProfileDropdown()">👤</div>
+  <div class="profile-section" id="profileSection">
+    <!-- Sign Up and Sign In options -->
+    <a href="signup.html">Sign Up</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Your existing CSS styles here */
+
+  /* Additional styles for profile icon */
+  .profile-icon {
+    float: right;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer; /* Add cursor style to indicate clickability */
+  }
+  
+  /* Styles for the profile section */
+  .profile-section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  /* Style for profile options within profile section */
+  .profile-section a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Hover effect for profile options */
+  .profile-section a:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <!-- Your navigation bar content here -->
+  <div class="profile-icon" onmouseover="showProfileDropdown()" onmouseout="hideProfileDropdown()">👤</div>
+  <div class="profile-section" id="profileSection">
+    <!-- Sign Up and Sign In options -->
+    <a href="signup.html">Sign Up</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">OrgoCow</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="milk_comparison.html">Blog</a></li>
+        <li><a href="add_to_cart.html">Cart</a></li>
+        <li><a href="yourorder.html">Your Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+<!-- templates/milk_comparison.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Milk Comparison</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Milk Comparison</h1>
+        <p>Benefits of Organic A2 Gir Milk vs Regular Milk</p>
+    </header>
+
+    <div class="content">
+        <div class="comparison-item">
+            <h2>Regular Milk</h2>
+            <ul>
+                <li>Typically sourced from mixed breeds</li>
+                <li>May contain harmful additives</li>
+                <li>Potential for lactose intolerance</li>
+                <li>Limited nutritional benefits</li>
+            </ul>
+        </div>
+        <div class="comparison-item">
+            <h2>Organic A2 Gir Milk</h2>
+            <ul>
+                <li>Sourced from purebred Gir cows</li>
+                <li>No harmful additives or chemicals</li>
+                <li>Less likely to cause lactose intolerance</li>
+                <li>Rich in A2 beta-casein protein</li>
+                <li>Higher nutritional content</li>
+                <li>Potential health benefits</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

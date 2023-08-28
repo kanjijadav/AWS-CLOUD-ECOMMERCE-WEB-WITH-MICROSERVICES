@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+<link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">orgo milk</a>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="milk_comparison.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a>
+  <!-- Modified profile icon and profile section -->
+  <div class="profile-icon" onmouseover="showProfileDropdown()" onmouseout="hideProfileDropdown()">👤</div>
+  <div class="profile-section" id="profileSection">
+    <!-- Sign Up and Sign In options -->
+    <a href="signup.html">Sign Up</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+
+</head>
+<body>
+
+<div class="navbar">
+  <!-- Your navigation bar content here -->
+  <div class="profile-icon" onmouseover="showProfileDropdown()" onmouseout="hideProfileDropdown()">👤</div>
+  <div class="profile-section" id="profileSection">
+    <!-- Sign Up and Sign In options -->
+    <a href="signup.html">Sign Up</a>
+    <a href="signin.html">Sign In</a>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In - ORGO COW</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<h1>Sign In</h1>
+
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+  
+  <button type="submit">Sign In</button>
+</form>
+
+</body>
+</html>

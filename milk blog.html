@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="C:\Users\HP\OneDrive\Desktop\portfolio of me\OIP.jfif" alt="Organic Mart Logo">
+    <a href="index.html">Organic Mart</a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="blog 1.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a> <!-- Interchanged About Us and Product List -->
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="profile-icon" onclick="showProfileDropdown()">👤 &#9660;</button>
+    <div class="dropdown-content">
+      <a href="SIGN UP.html">Sign Up</a>
+      <a href="SIGN IN.html">Sign In</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Milk Blog - Organic Mart</title>
+<link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Organic Milk Blog</h1>
+</div>
+
+<div class="container">
+  <div class="blog">
+    <h2>The Benefits of Organic Milk</h2>
+    <p>Organic milk is produced without the use of synthetic pesticides and hormones, making it a healthier option for consumers...</p>
+    <p>Explore the nutritional advantages of organic milk and learn how its production methods contribute to animal welfare and sustainability.</p>
+  </div>
+
+  <div class="blog">
+    <h2>Exploring Organic Milk Products</h2>
+    <p>Organic milk isn't limited to just a glass of milk. Discover a wide range of organic milk products, from yogurt and cheese to butter and more...</p>
+    <p>Find out how these products are made, their nutritional profiles, and creative ways to incorporate them into your daily meals.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Organic Mart. All rights reserved.</p>
+</div>
+
+</body>
+</html>

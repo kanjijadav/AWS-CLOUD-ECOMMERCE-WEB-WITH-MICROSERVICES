@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="C:\Users\HP\OneDrive\Desktop\portfolio of me\OIP.jfif" alt="Organic Mart Logo">
+    <a href="index.html">Organic Mart</a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="blog 1.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a> <!-- Interchanged About Us and Product List -->
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="profile-icon" onclick="showProfileDropdown()">👤 &#9660;</button>
+    <div class="dropdown-content">
+      <a href="SIGN UP.html">Sign Up</a>
+      <a href="SIGN IN.html">Sign In</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Mart - Home</title>
+<link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to Organic Mart</h1>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>Our Vision</h2>
+    <p>We strive to provide the highest quality organic products to our customers, promoting a healthier and more sustainable lifestyle.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Mission</h2>
+    <p>Our mission is to make organic products accessible to everyone and contribute to a greener and more eco-friendly world.</p>
+  </div>
+
+  <h1>Product Our</h1>
+
+  <div class="product-list">
+      <div class="product">
+          <img src="milk.jpg" alt="Organic Milk">
+          <div class="product-details">
+              <h2>Organic Milk</h2>
+              <p>Price: $400/kg</p>
+              <p>Discount: 10%</p>
+              <p>This milk is made by real Gir cows and from A2 cow milk. It is very healthy.</p>
+              <a href="buy_now.html">Buy Now</a>
+              <a href="add_to_cart.html">Add to Cart</a>
+          </div>
+      </div>
+      
+      <!-- Add more product boxes -->
+      
+      <div class="product">
+          <img src="milk.jpg" alt="Organic Ghee">
+          <div class="product-details">
+              <h2>Organic Ghee</h2>
+              <p>Price: $400/kg</p>
+              <p>Discount: 10%</p>
+              <p>This ghee is made by real Gir cows and from A2 cow milk. It is very healthy.</p>
+              <a href="buy_now.html">Buy Now</a>
+              <a href="add_to_cart.html">Add to Cart</a>
+          </div>
+      </div>
+      
+      <div class="product">
+          <img src="milk.jpg" alt="Organic Yogurt">
+          <div class="product-details">
+              <h2>Organic Yogurt</h2>
+              <p>Price: $400/kg</p>
+              <p>Discount: 10%</p>
+              <p>This yogurt is made by real Gir cows and from A2 cow milk. It is very healthy.</p>
+              <a href="buy_now.html">Buy Now</a>
+              <a href="add_to_cart.html">Add to Cart</a>
+          </div>
+      </div>
+      
+      <div class="product">
+          <img src="milk.jpg" alt="Organic Paneer">
+          <div class="product-details">
+              <h2>Organic Paneer</h2>
+              <p>Price: $400/kg</p>
+              <p>Discount: 10%</p>
+              <p>This paneer is made by real Gir cows and from A2 cow milk. It is very healthy.</p>
+              <a href="buy_now.html">Buy Now</a>
+              <a href="add_to_cart.html">Add to Cart</a>
+          </div>
+      </div>
+     
+      <footer class="site-footer">
+        
+       
+        
+    <p>&copy; 2023 Organic Mart. All rights reserved.</p>
+    </footer>
+    
+     
+
+</body>
+</html>

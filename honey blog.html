@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGO COW</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Reduced horizontal space */
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 60px;
+    margin-right: 25px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    color: rgb(213, 205, 205);
+    text-decoration: none;
+    margin: 10px 15px; /* Added missing 'px' unit */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #a2a6a3;
+    color: rgb(196, 182, 182);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropbtn {
+    font-size: 16px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .profile-icon {
+    font-size: 24px;
+    color: rgb(107, 21, 21);
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .profile-section {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 2;
+  }
+
+  .profile-section a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: rgb(35, 171, 27);
+    transition: background-color 0.3s;
+  }
+
+  .profile-section a:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="C:\Users\HP\OneDrive\Desktop\portfolio of me\OIP.jfif" alt="Organic Mart Logo">
+    <a href="index.html">Organic Mart</a>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">About Us &#9660;</button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="blog 1.html">Blog</a>
+      <a href="faq.HTML">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <a href="Products.html">Product List</a> <!-- Interchanged About Us and Product List -->
+  <div class="dropdown">
+    <button class="dropbtn">My Account &#9660;</button>
+    <div class="dropdown-content">
+      <a href="yourorder.html">My Orders</a>
+      <a href="buy_now.html">Add to Cart</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="profile-icon" onclick="showProfileDropdown()">👤 &#9660;</button>
+    <div class="dropdown-content">
+      <a href="SIGN UP.html">Sign Up</a>
+      <a href="SIGN IN.html">Sign In</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "block";
+  }
+
+  function hideProfileDropdown() {
+    var profileSection = document.getElementById("profileSection");
+    profileSection.style.display = "none";
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Honey Blog - Organic Mart</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .blog {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .blog p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Organic Honey Blog</h1>
+</div>
+
+<div class="container">
+  <div class="blog">
+    <h2>The Benefits of Organic Honey</h2>
+    <p>Organic honey is a natural sweetener that offers various health benefits. It's rich in antioxidants, vitamins, and minerals...</p>
+    <p>Learn more about the advantages of including organic honey in your diet and how it differs from conventional honey.</p>
+  </div>
+
+  <div class="blog">
+    <h2>Cooking with Organic Honey</h2>
+    <p>Organic honey isn't just a sweetener – it's a versatile ingredient in cooking and baking. Discover delicious recipes that use organic honey...</p>
+    <p>From honey-glazed vegetables to honey-infused desserts, explore new culinary possibilities with organic honey.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Organic Mart. All rights reserved.</p>
+</div>
+
+</body>
+</html>
